@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE RECORDS</title>
+    <link rel="stylesheet" href="./empstyle.css">
+</head>
+<body>
+    <div>
+        <div>
+<table class="table">
+    <tr class="table-row">
+        <td>
+            <form onsubmit="event.preventDefault(); onFormSubmit(); " >
+                <div class="container">
+                    <h1 id="heading1">Add Employee Details</h1>
+                    <p id="p1">Please fill  this form to create a Record.</p>
+                    <hr>
+            
+                    <label id="label" for="Name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" required >
+            
+                    <label id="label" for="Depatment"><b>Department</b></label>
+                    <input type="text" placeholder="Enter Department" name="Department" id="Department" required >
+
+                    <label id="label" for="Position"><b>Position</b></label>                   
+                    <input type="text" placeholder="Enter Position" name="Position" id="Position" required >
+
+                    <label id="label" for="City"><b>Email</b></label>
+                    <input type="email" placeholder="Enter email" name="email" id="email" required >
+
+                    <label id="label" for="number"><b>Phone Number</b></label>
+                    <input type="number" name="number" id="number"placeholder="number" required>
+                    <hr>
+            
+                    <button type="submit" name="submit"class="registerbtn">Submit</button>
+                </div>
+            </form>
+        </td>
+       
+    </tr><br>
+    
+</table><br><br><br><br><br><br>
+</div>
+<div class="flex-child green">
+ <td>
+            <table  id="empList">
+                <h1 id="record">Employee Record</h1>
+                <thead id="tab_head">
+                        <tr>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Position</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                </thead>
+               
+                <tbody id="tab_body">
+
+                </tbody>
+                
+            </table>
+        </td>
+        </div>
+</div>
+    <script src="./empjs.js"></script>
+</body>
+</html>
